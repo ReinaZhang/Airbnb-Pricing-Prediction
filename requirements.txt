@@ -1,0 +1,48 @@
+﻿Installation instructions
+
+Packages required and how to install:
+
+1.pandas: 
+use conda
+conda install pandas
+or pypi
+pip install pandas
+
+2.numpy:
+pip install numpy
+
+3.requests
+pip install requests
+
+4.beautifulsoup4
+pip install beautifulsoup4
+
+5.selenium
+pip install selenium
+*Selenium requires a driver to interface with the chosen browser. In this project, we used Chrome which requires chromedriver. You need to download the chromedriver and install it at first from here: https://sites.google.com/a/chromium.org/chromedriver/downloads 
+
+Make sure chromedriver is in your PATH, e.g., place it in /usr/bin or /usr/local/bin
+
+And when you run this code, make sure you change the path to your PATH
+from selenium import webdriver  
+browser = webdriver.Chrome('/Users/yutingzhang/Desktop/chromedriver')
+
+You can find detailed instructions here: https://selenium-python.readthedocs.io/installation.html
+There is also detailed instruction for windows users.
+
+6. sklearn
+If you already have working installation of numpy and scipy, the easiest way to install scikit-learn is 
+pip install -U scikit-learn
+or conda:
+conda install scikit-learn
+
+If you have not installed numpy and scipy:
+pip install -U numpy scipy scikit-learn
+
+
+
+
+
+
+
+
